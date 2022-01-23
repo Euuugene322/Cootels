@@ -35,13 +35,41 @@ p {
     margin: 0 auto;
 }
 
+/* Text Decoration */
+
+.text__normal {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #848fac;
+}
+
+.text__title {
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #192252;
+}
+
+.text__btn {
+    background: #0E1734;
+    border-radius: 4px;
+
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 500;
+    padding: 16px 32px;
+    color: white;
+    text-decoration: none;
+}
+
 /* Header */
 
 .header {
     background-color: white;
 }
 
-.header-nav {
+.header__nav {
     height: 120px;
 
     display: flex;
@@ -50,22 +78,23 @@ p {
     align-items: center;
 }
 
-.header-name {
+.header__name {
     font-size: 2rem;
     color: #192252;
-}
-
-.header-nav-ul {
     list-style: none;
 }
 
-.header-nav-li {
+.item-header__nav {
     display: inline;
 
     margin-right: 32px;
 }
 
-.header-nav-link {
+.item-header__nav:nth-child(3) {
+    margin-right: 0;
+}
+
+.link-header__nav {
     font-family: Inter, sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -73,11 +102,7 @@ p {
     text-decoration: none;
 }
 
-.header-nav-link:nth-child(3) {
-    margin-right: 0;
-}
-
-.btn-start {
+.header__btn {
     background: #0E1734;
     border-radius: 4px;
 
@@ -91,13 +116,13 @@ p {
 
 /* About */
 
-.slide-about {
+.about {
     display: flex;
     justify-content: space-between;
     padding-top: 80px;
 }
 
-.slide-about-title {
+.about__title {
     margin-top: 135px;
 
     color: #192252;
@@ -106,97 +131,63 @@ p {
     font-weight: 600;
 }
 
-.slide-about-subtitle {
+.about__subtitle {
     margin-top: 24px;
     margin-bottom: 32px;
     margin-right: 100px;
-
-    color: #848fac;
-    font-size: 18px;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
 }
 
-.slide-about-btn {
-    background: #0E1734;
-    border-radius: 4px;
-
-    font-size: 1rem;
-    font-family: Inter;
-    font-weight: 500;
-    padding: 16px 32px;
-    color: white;
-    text-decoration: none;
+.block-about__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.slide-about-image {
+.block-about__img {
     display: flex;
     justify-content: space-between;
 }
 
-.slide-img {
+.about__img {
     margin-right: 24px;
 }
 
-.slide-img:nth-child(2) {
+.about__img:nth-child(2) {
     position: relative;
     top: 86px;
 }
 
-.slide-img:nth-child(3) {
+.about__img:nth-child(3) {
     margin-right: 0;
 }
 
 /* House */
 
-.slide-house {
+.house {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 257px 0 80px 0;
 }
 
-.slide-house-image {
+.house__img {
     margin-right: 126px;
 }
 
-.slide-house-block {
+.house__block {
     margin-top: 105px;
     margin-bottom: 185px;
 }
 
-.slide-house-title {
-    font-family: Montserrat, sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: #192252;
-}
-
-.slide-house-subtitle {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #848fac;
-
+.house__subtitle {
     margin-top: 24px;
     margin-bottom: 32px;
 }
 
-.slide-house-btn {
-    background: #0E1734;
-    border-radius: 4px;
-
-    font-size: 1rem;
-    font-family: Inter;
-    font-weight: 500;
-    padding: 16px 32px;
-    color: white;
-    text-decoration: none;
-}
 
 /* Description */
 
-.slide-description {
+.description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,47 +195,35 @@ p {
     margin: 80px 0;
 }
 
-.slide-description-top {
+.description__top {
     display: flex;
     justify-content: space-between;
     padding-bottom: 32px;
 }
 
-.slide-description-left {
+.description__left {
     margin-top: 115px;
     margin-right: 126px;
 }
 
-.slide-description-title {
-    font-family: Montserrat, sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: #192252;
-}
-
-.slide-description-subtitle {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #848fac;
-
+.description__subtitle {
     margin-top: 24px;
     margin-bottom: 32px;
 }
 
-.slide-description-bottom {
+.description__bottom {
     display: flex;
     justify-content: space-between;
 }
 
-.slide-description-right {
+.description__right {
     margin-top: 115px;
     margin-left: 126px;
 }
 
 /* Reservation */
 
-.slide-reservation {
+.reservation {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -252,7 +231,7 @@ p {
     padding: 80px 0;
 }
 
-.slide-rooms-about {
+.rooms__about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,50 +240,26 @@ p {
     padding: 0 306px;
 }
 
-.slide-rooms-title {
-    font-family: Montserrat, sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: #192252;
-}
-
-.slide-rooms-subtitle {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #848fac;
-
+.rooms__subtitle {
     margin-top: 24px;
     margin-bottom: 32px;
 }
 
-.slide-rooms-btn {
-    background: #0E1734;
-    border-radius: 4px;
-
-    font-size: 1rem;
-    font-family: Inter;
-    font-weight: 500;
-    padding: 16px 32px;
-    color: white;
-    text-decoration: none;
-}
-
-.slide-rooms-choice {
+.rooms__choice {
     display: flex;
 
     padding-top: 80px;
 }
 
-.slide-rooms-learn {
+.rooms__learn {
     margin-right: 24px;
 }
 
-.slide-rooms-learn:nth-child(3) {
+.rooms__learn:nth-child(3) {
     margin-right: 0;
 }
 
-.slide-rooms-choice-title {
+.rooms__title {
     font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -314,63 +269,42 @@ p {
     margin-bottom: 16px;
 }
 
-.slide-rooms-choice-subtitle {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #848fac;
-}
-
-.slide-rooms-link {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #424F7B;
-
+.rooms__link {
     text-decoration: none;
 }
 
-.slide-rooms-svg {
+.rooms__icon {
     margin: 0 auto;
     margin-left: 13.5px;
 }
 
 /* Contact Us */
 
-.slide-contact {
+.contact {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     padding: 160px 0;
 }
 
-.slide-contact-journey {
+.contact__text {
     font-size: 16px;
     font-family: Inter, sans-serif;
     font-weight: 500;
     color: #424F7B;
 }
 
-.slide-contact-title {
-    font-family: Montserrat, sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: #192252;
-
+.contact__title {
+    width: 450px;
     margin-top: 12px;
 }
 
-.slide-contact-subtitle {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #848fac;
-
+.contact__subtitle {
     margin-top: 24px;
     margin-bottom: 32px;
 }
 
-.slide-contact-start {
+.contact__left {
     width: 407px;
     display: flex;
     flex-direction: column;
@@ -409,19 +343,7 @@ border-radius: 4px;
     border-radius: 50%;
 }
 
-.slide-contact-us {
-    background: #0E1734;
-    border-radius: 4px;
-
-    font-size: 1rem;
-    font-family: Inter;
-    font-weight: 500;
-    padding: 16px 32px;
-    color: white;
-    text-decoration: none;
-}
-
-.silde-contact-more {
+.text__more {
     margin-left: 24px;
 
     font-family: Inter, sans-serif;
@@ -432,16 +354,9 @@ border-radius: 4px;
     text-decoration: none;
 }
 
-.slide-contact-menu {
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 24px;
-    color: #424F7B;
-}
-
 /* Customers */
 
-.slide-customers {
+.customers {
     padding: 80px 0;
 
     display: flex;
@@ -449,26 +364,17 @@ border-radius: 4px;
     align-items: center;
 }
 
-.slide-customers-title {
-    font-family: Montserrat, sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: #192252;
+.customers__title {
     margin-bottom: 62px;
 }
 
-.slide-customers-comment {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #848fac;
-
+.customers__comment {
     width: 800px;
     margin-top: 44px;
     text-align: center;
 }
 
-.slide-customers-name {
+.customers__names {
     font-family: Inter, sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -478,12 +384,12 @@ border-radius: 4px;
     margin-bottom: 24px;
 }
 
-.slide-customers-btn {
+.customers__btn {
     display: flex;
     align-items: center;
 }
 
-.slide-btn {
+.slide__btn {
     width: 8px;
     height: 8px;
     background-color: #FAB047;
@@ -492,7 +398,7 @@ border-radius: 4px;
     margin-right: 12px;
 }
 
-.slide-btn:nth-child(2) {
+.slide__btn:nth-child(2) {
     width: 12px;
     height: 12px;
     background-color: #FAB047;
@@ -501,60 +407,62 @@ border-radius: 4px;
     margin-right: 12px;
 }
 
-.slide-btn:nth-child(4) {
+.slide__btn:nth-child(4) {
     margin-right: 0;
 }
 
 /* Footer */
 
-.slide-footer {
+.footer {
     background-color: #0B265A;
 
     padding: 120px;
 }
 
-.slide-footer-container {
+.footer__container {
     display: flex;
     justify-content: space-between;
 }
 
-.slide-footer-block {
+.footer__block {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.slide-footer-block:nth-child(1) {
+.footer__block:nth-child(1) {
     flex-grow: 5;
 }
 
-.slide-footer-networks {
+.footer__links {
     display: flex;
     align-items: center;
 }
 
-.slide-footer-svg {
+.footer__svg {
+    width: 32px;
+    height: 32px;
     margin-right: 24px;
 }
 
-.slide-footer-svg:nth-child(3) {
+.footer__svg:nth-child(3) {
     margin-right: 0;
 }
 
-.slide-footer-name {
+.footer__name {
     font-family: Montserrat, sans-serif;
     font-size: 32px;
     font-weight: 700;
     color: white;
 }
 
-.slide-footer-about {
+.footer__about {
     width: 186px;
     margin-top: 13px;
     margin-bottom: 36px;
 }
 
-.slide-footer-about-text {
+.footer__text {
     font-family: Inter, sans-serif;
     font-size: 16px;
     line-height: 28px;
@@ -562,7 +470,7 @@ border-radius: 4px;
     color: #D9DBDE;
 }
 
-.slide-footer-heads {
+.footer__heads {
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -570,7 +478,7 @@ border-radius: 4px;
     margin-bottom: 24px;
 }
 
-.slide-footer-items {
+.footer__items {
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -580,6 +488,6 @@ border-radius: 4px;
     text-decoration: none;
 }
 
-.slide-footer-block > a:last-of-type {
+.footer__block > a:last-of-type {
     margin-bottom: 0;
 }
