@@ -287,16 +287,16 @@ p {
     padding: 160px 0;
 }
 
+.contact__title {
+    width: 450px;
+    margin-top: 12px;
+}
+
 .contact__text {
     font-size: 16px;
     font-family: Inter, sans-serif;
     font-weight: 500;
     color: #424F7B;
-}
-
-.contact__title {
-    width: 450px;
-    margin-top: 12px;
 }
 
 .contact__subtitle {
@@ -309,38 +309,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.slide-contact-check {
-    display: flex;
-    justify-content: space-between;
-
-    width: 588px;
-    height: 100px;
-    padding: 32px 36px;
-    margin-bottom: 24px;
-
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 24px;
-    color: #424F7B;
-
-    text-align: center;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 4px;
-}
-
-.slide-contact-check:nth-child(3) {
-    margin-bottom: 0;
-}
-
-.square {
-    width: 40px;
-    height: 40px;
-
-    background-color: #FFECE2;
-    border-radius: 50%;
 }
 
 .text__more {
@@ -489,5 +457,73 @@ border-radius: 4px;
 }
 
 .footer__block > a:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Test */
+
+.fold {
+    height: 7px;
+    width: 14px;
+    left: 5px;
+    top: 8.5px;
+    border-radius: 0px;
+}
+
+.unfold {
+    height: 7px;
+    width: 14px;
+    left: 5px;
+    top: 8.5px;
+    border-radius: 0px;
+
+}
+
+.fold-read__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FFECE2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.unfold-read__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FF620A;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: none;
+}
+
+.item-contact__list {
+    width: 588px;
+    height: 100px;
+
+    margin-bottom: 26px;
+    padding: 32px 36px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    color: #424F7B;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.item-contact__list:nth-last-child() {
     margin-bottom: 0;
 }
